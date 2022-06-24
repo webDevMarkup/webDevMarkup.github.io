@@ -5,6 +5,8 @@ author: Guest Author
 intro: This is the introduction text for this post. It appears large and bold at the top of the post
 intro_image: /img/home.jpg
 intro_image_ratio: is-16by9
+categories: [blog, travel]
+tags: [hot, summer]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit eros, porta eget dapibus vitae, tempus et mi. Maecenas sollicitudin ligula vel metus condimentum, ac commodo sem vestibulum. Morbi tempus dui sapien, vel mattis orci faucibus id. Nulla congue elit vel accumsan mattis. Ut vel dolor porttitor, laoreet risus in, tempus velit. Praesent eu nisi enim. Integer sed venenatis risus, eget semper sapien. Nulla at lacinia lectus. Sed rutrum lectus at vestibulum tristique. Cras ex sem, consequat at dapibus scelerisque, iaculis sit amet tellus. Fusce eu orci ut ex consequat semper. Mauris pharetra dictum dui, vestibulum egestas erat.
