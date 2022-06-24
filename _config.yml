@@ -4,8 +4,8 @@ tagline: Mere Blog Theme
 email: your-email@domain.com
 description: >
   The demo site for Mere Blog Theme, made for Jekyll and GitHub pages websites
-# baseurl: "/mere-blog-theme"
-url: "https://www.csrhymes.com"
+# baseurl: ""
+url: "https://webdevmarkup.github.io/"
 permalink: pretty
 
 paginate: 6
