@@ -1,23 +1,21 @@
-<nav class="pagination is-centered">
-    {% if paginator.previous_page %}
-    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="pagination-previous is-info"><i class="fas fa-chevron-left"></i></a>
-    {% else %}
-    <p class="pagination-previous" disabled><i class="fas fa-chevron-left"></i></p>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="pagination-next is-info"><i class="fas fa-chevron-right"></i></a>
-    {% else %}
-    <p class="pagination-next" disabled ><i class="fas fa-chevron-right"></i></p>
-    {% endif %}
-    <ul class="pagination-list">
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <li><a class="pagination-link is-current">{{ page }}</a></li>
-        {% elsif page == 1 %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-link">{{ page }}</a></li>
+<div class="container">
+  <nav class="pagination" role="pagination">
+    <ul>
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <p><a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
         {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination-link">{{ page }}</a></li>
+        <p><a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
         {% endif %}
-        {% endfor %}
+      {% endif %}
+
+      {% if paginator.total_pages > 1 %}
+      <p><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></p>
+      {% endif %}
+      
+      {% if paginator.next_page %}
+      <p><a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+      {% endif %}
     </ul>
-</nav>
+  </nav>
+</div>
