@@ -50,17 +50,17 @@ layout: default
 </aside> <!-- End Sidebar -->
 <div class="content-box clearfix">
   {{ content }}
-  <!-- 
-    {% for post in site.posts %}
+  
+    <!-- {% for post in site.posts %}
         <article class="post">
-          <a class="post-thumbnail" style="background-image: url(/assets/img/how-to-start.jpg)" href="{{ post.url }}"></a>     
+          <a class="post-thumbnail" style="background-image: url('/assets/img/{{ post.img }}')" href="{{ post.url }}"></a>     
           <div class="post-content">
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p>{{ post.description }}</p>
             <span class="post-date">{{ post.date }}</span>
-            <span class="post-words">3 minute read</span>
+             <span class="post-words">3 minute read</span> 
           </div>
         </article>
-    {% endfor %}
-  </ul> -->
+    {% endfor %} -->
+  </ul>
 </div>

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: GIT blog 만들기 (1. Jekyll 세팅)
-date: 2022-07-01 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: jekyll.jpeg # Add image post (optional)
+date: 2022-07-01
+img: jekyll.jpeg
 tags: [Programming, Learn] # add tag
+author: One-punch man
 ---
 
 

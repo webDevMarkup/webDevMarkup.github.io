@@ -974,7 +974,7 @@ table tfoot td {
   position: relative;
   padding-bottom: 15px;
   font-size: 16px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #333030;
   font-weight: 700;
 }
