@@ -18,7 +18,13 @@ layout: default
       <li class="gnb__item"><a href="#" title="작성 글" class="gnb__link">Post</a></li>
       <li class="gnb__item">
         <a href="#" title="태그 목록" class="gnb__link">Tag</a>
-        <div class="tag"></div>
+        <div class="tagBox">
+          {% if page.tags %}
+            {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/tags#{{tag}}" class="tagBox__tag tag">&#35; {{ tag }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
       </li>
     </ul>
   </nav>

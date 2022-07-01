@@ -1026,6 +1026,39 @@ table tfoot td {
   color: inherit;
 }
 
+.tagBox {
+  margin-top: 5px;
+  padding: 0 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.tagBox::-webkit-scrollbar-track {
+  background-color: #e7e7e7;
+}
+.tagBox::-webkit-scrollbar-thumb {
+  background-color: #7ca4f0;
+  border-radius: 10px;
+}
+.tagBox::-webkit-scrollbar {
+  width: 4px;
+}
+.tagBox__tag {
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px;
+  padding: 0 8px;
+  background-color: #abbfe5;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+}
+.tagBox__tag:hover {
+  background-color: #7097de;
+  box-shadow: rgb(0 0 0 / 20%);
+}
+
 .content-box {
   padding: 20px;
   padding-left: 260px;
