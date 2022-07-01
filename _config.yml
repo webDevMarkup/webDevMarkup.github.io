@@ -10,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: '0x3b' # add your name
-author-img: js-1.png # add your photo
+author-img: logo.jpg # add your photo
 about-author: 블로그 설명 주저리주러리 # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
