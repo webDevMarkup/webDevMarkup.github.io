@@ -39,3 +39,23 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 # Disable Disk Cache
 disable_disk_cache: BOOL
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

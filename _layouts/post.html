@@ -21,8 +21,11 @@ layout: main
       </header>
       {{content | markdownify}}
         <!-- 작성자 -->
-        <div class="page-author" style="font-size:20px;color:#000;font-weight:bold">
-          작성자 {{ page.author }}
+        <div class="page-author">
+          {% assign author = site.authors | where: 'name', page.author | first %}
+          {% if author %}
+          {% include author-media.html %}
+          {% endif %}
         </div>
       <div class="page-footer">
         <div class="page-share">
