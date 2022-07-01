@@ -12,29 +12,29 @@ layout: default
       <p>{{site.about-author}}</p>
     </div>
   </header> <!-- End Header -->
+  <nav class="gnb">
+    <ul class="gnb__list">
+      <li class="gnb__item"><a href="#" title="소개" class="gnb__link">About</a></li>
+      <li class="gnb__item"><a href="#" title="작성 글" class="gnb__link">Post</a></li>
+      <li class="gnb__item">
+        <a href="#" title="태그 목록" class="gnb__link">Tag</a>
+        <div class="tag"></div>
+      </li>
+    </ul>
+  </nav>
   <footer>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
-        {% if site.social-twitter %}
-          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-facebook %}
-          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        {% endif %}
         {% if site.social-github %}
           <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
         {% else %}
           <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         {% endif %}
-        {% if site.social-linkedin %}
-          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.social-linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        {% if site.social-slack %}
+        <li><a href="https://join.slack.com/{{ site.social-slack }}" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
         {% else %}
-          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://join.slack.com/t/0x3bhq/shared_invite/zt-1c446bbnk-o3gXE5jCBXLhBHH~e_LDvA" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
@@ -50,17 +50,17 @@ layout: default
 </aside> <!-- End Sidebar -->
 <div class="content-box clearfix">
   {{ content }}
-  <!-- 
-    {% for post in site.posts %}
+  
+    <!-- {% for post in site.posts %}
         <article class="post">
-          <a class="post-thumbnail" style="background-image: url(/assets/img/how-to-start.jpg)" href="{{ post.url }}"></a>     
+          <a class="post-thumbnail" style="background-image: url('/assets/img/{{ post.img }}')" href="{{ post.url }}"></a>     
           <div class="post-content">
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p>{{ post.description }}</p>
             <span class="post-date">{{ post.date }}</span>
-            <span class="post-words">3 minute read</span>
+             <span class="post-words">3 minute read</span> 
           </div>
         </article>
-    {% endfor %}
-  </ul> -->
+    {% endfor %} -->
+  </ul>
 </div>
