@@ -36,3 +36,6 @@ paginate: 8
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+# Disable Disk Cache
+disable_disk_cache: BOOL
