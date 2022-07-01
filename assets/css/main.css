@@ -1007,7 +1007,7 @@ table tfoot td {
   list-style: none;
 }
 .gnb__item:not(:first-of-type) {
-  margin-top:5px;
+  margin-top:6px;
 }
 .gnb__link {
   display: inline-block;
