@@ -1548,3 +1548,7 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
+
+/* authors */
+.author-media {padding:1.5rem;background:#f6f6f6}
+.page-author{position:relative;margin-top:20px}
