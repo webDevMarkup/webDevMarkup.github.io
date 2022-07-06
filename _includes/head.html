@@ -42,29 +42,6 @@
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
   {% endif %}
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.site-twitter }}">
-    <meta name="twitter:creator" content="@{{ site.social-twitter }}">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-  {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-  {% endif %}
-  {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
-  {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}">
-  {% else %}
-    <meta name="twitter:description" content="{{ site.description }}">
-  {% endif %}
-  {% if page.img %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ page.img }}">
-  {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.author-img }}">
-  {% endif %}
-
 	<meta name="description" content="{{ page.description }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
