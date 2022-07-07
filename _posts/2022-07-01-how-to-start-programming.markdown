@@ -1,6 +1,8 @@
 ---
 layout: post
 title: GIT blog 만들기 (1. Jekyll 세팅)
+og:title:
+description: Jekyll을 활용해 Git 블로그 만들기 시리즈 - 1. Jekyll 세팅
 date: 2022-07-01
 img: jekyll.jpeg
 tags: [Programming, Learn] # add tag
