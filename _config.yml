@@ -1,9 +1,8 @@
 title: '0x3b Markup Blog'
-description: > # this means to ignore newlines until "baseurl:"
-  마크업 개발 관련 기술 블로그입니다.
+description: 마크업 개발 관련 기술 블로그입니다.
 permalink: ':title/'
 #baseurl: "https://webdevmarkup.github.io/" # the subpath of your site, e.g. /blog
-url: "https://webdevmarkup.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://webdevmarkup.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
