@@ -14,16 +14,22 @@ layout: default
   </header> <!-- End Header -->
   <nav class="gnb">
     <ul class="gnb__list">
+      <li class="gnb__item"><a href="{{site.baseurl}}/pagetag.html" title="태그" class="gnb__link">tag</a></li>
       <li class="gnb__item"><a href="#" title="소개" class="gnb__link">About</a></li>
       <li class="gnb__item"><a href="#" title="작성 글" class="gnb__link">Post</a></li>
       <li class="gnb__item">
         <a href="#" title="태그 목록" class="gnb__link">Tag</a>
-        <div class="tagBox">
+        <!--<div class="tagBox">
           {% if page.tags %}
             {% for tag in page.tags %}
             <a href="{{site.baseurl}}/tags#{{tag}}" class="tagBox__tag tag">&#35; {{ tag }}</a>
             {% endfor %}
           {% endif %}
+        </div>-->
+        <div class="page-tag">
+          {% for tag in site.data.tags %}
+          <a href="{{site.baseurl}}/tags#{{tag}}" class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</a>
+          {% endfor %}
         </div>
       </li>
     </ul>
@@ -54,19 +60,10 @@ layout: default
     </div>
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
+
 <div class="content-box clearfix">
   {{ content }}
-  
-    <!-- {% for post in site.posts %}
-        <article class="post">
-          <a class="post-thumbnail" style="background-image: url('/assets/img/{{ post.img }}')" href="{{ post.url }}"></a>     
-          <div class="post-content">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.description }}</p>
-            <span class="post-date">{{ post.date }}</span>
-             <span class="post-words">3 minute read</span> 
-          </div>
-        </article>
-    {% endfor %} -->
-  </ul>
 </div>
+
+
+

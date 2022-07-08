@@ -1,8 +1,15 @@
 ---
 layout: main
+permalink: /pagetag
 ---
-{% for post in paginator.posts %}
-  <article class="post">
+{% for post in site.posts %}
+  <article class="post"
+           {% if post.tags %}
+           {% for tag in post.tags %}
+           data-{{ tag }}
+           {% endfor %}
+           {% endif %}
+  >
     {% if post.img %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% else %}
@@ -17,5 +24,3 @@ layout: main
     </div>
   </article>
 {% endfor %}
-
-{% include pagination.html %}

@@ -34,9 +34,13 @@ layout: main
           <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
         </div>
         <div class="page-tag">
-          {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
-          {% endfor %}
+          {% if page.tags %}
+            {% for tag in page.tags %}
+              {% if site.data.tags contains tag %}
+                <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ site.data.format[tag] }}</a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
       {% include giscus.html %}
