@@ -1158,7 +1158,9 @@ footer .copyright {
   text-align: center;
   margin: 0;
 }
-
+.hidden {
+  display:none !important;
+}
 .post {
   width: 100%;
   max-width: 100%;
