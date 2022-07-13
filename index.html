@@ -2,15 +2,6 @@
 layout: main
 ---
 
-
-  {% for tag in site.data.tags %}
-
-  <span class="tag" data-tag="{{tag}}">{{ site.data.format[tag] }}</span>
-
-  {% endfor %}
-
-
-
 {% for post in site.posts %}
 {% for post in paginator.posts %}
 
@@ -43,6 +34,31 @@ layout: main
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 <script>
+  // 전체 포스팅에서 태그 필터링
+  $(document).ready(function(){
+    let currentTag = "";
+    const queryTag = getQuery().tag;
+    if(queryTag) {
+      currentTag = queryTag;
+      filterByTagName(currentTag);
+    }
+  })
+
+  function getQuery() {
+    let params = {};
+
+    window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+      function(str, key, value) {
+        params[key] = value;
+      }
+    );
+    return params;
+  }
+
+  console.log(getQuery());
+
+
+  // 현재 페이지에서 포스트 필터링
   $("[data-tag]").click((e) => {
     currentTag = e.target.dataset.tag;
     filterByTagName(currentTag);
@@ -55,9 +71,8 @@ layout: main
         $(elem).addClass('hidden');
       }
     });
-
-
-    //$(`.tag`).removeClass('selected');
-    //$(`.tag[data-tag=${tagName}]`).addClass('selected');
+    // 태그 버튼 클릭 시 클래스 selected 추가/제거
+    $(`.tag`).removeClass('selected');
+    $(`.tag[data-tag=${tagName}]`).addClass('selected');
   }
 </script>

@@ -1161,6 +1161,22 @@ footer .copyright {
 .hidden {
   display:none !important;
 }
+.tag {
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px;
+  padding: 0 9px;
+  height: 25px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.tag.selected {
+  border-color: #666;
+  background: #666;
+  color: #fff;
+}
 .post {
   width: 100%;
   max-width: 100%;
