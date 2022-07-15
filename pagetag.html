@@ -31,39 +31,28 @@ permalink: /pagetag
 {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
 
 <div class="archive-group" style="display:none" id="{{tag_name}}">
-
-  <h3 id="{{tag_name}}">{{ tag_name }}</h3>
+  {% capture tag_size %}{{tag|last|size}}{% endcapture %}
+  <h3 id="{{tag_name}}" class="tagTitle"><i class="fa fa-tag fa-fw text-muted"></i>{{tag_name}}<span class="tagTitle__num">{{tag_size}}</span></h3>
 
   {% for post in site.tags[tag_name] %}
-  <article class="archive-item">
-    <h4>
-      <!-- click 하여 show/hide 한다 -->
-      <a href="{{ root_url }}{{ post.url }}">
-        {{post.title}}
-      </a>
-    </h4>
+  <article class="post">
+    {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %}
+    {% endif %}
+    <div class="post-content">
+      <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+      <!-- <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span> -->
+      <span class="post-date">{{post.date | date: '%Y-%m-%d'}}</span>
+      <span class="post-date">{{ post.author }}</span>
+      <!-- <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span> -->
+    </div>
   </article>
+
   {% endfor %}
 
 </div>
 {% endfor %}
 
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-<script>
-  // 전체 포스팅에서 태그 필터링
-  $(document).ready(function init(){
-    let url = window.location.href;
-    let req = /#([^\s]+)$/.exec(url);
 
-    if(!Array.isArray(req)) {
-      return false;
-    }
-    let selector = '#' + req.pop();
-    showTag(selector);
-  });
-
-  function showTag(selector) {
-    $('.archive-group').hide();
-    $(selector).show();
-  }
-</script>
