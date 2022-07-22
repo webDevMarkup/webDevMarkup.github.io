@@ -1593,3 +1593,14 @@ a.newer-posts:hover {
 /* authors */
 .author-media {padding:1.5rem;background:#f6f6f6}
 .page-author{position:relative;margin-top:20px}
+.page-author .media{display:flex}
+.page-author .media-left img{width:100px}
+.authorDetails .image > img{width:100px}
+.authorDetails .title{font-weight:bold;margin:0}
+.authorDetails .subtitle{margin:0}
+.authorDetails .card{background:#f4f4f4;padding:1em}
+.authorDetails .card .title {margin-top:0;margin-bottom:0}
+.authorDetails .card .subtitle{font-size:13px;margin-bottom:5px;}
+.authorDetails .card .content{font-size:1em}
+.authorDetails .card .button {display:block;background:#4a4a4a;color:#fff;text-align:center;text-decoration: none;margin-top:5px}
+.authorDetails .card .button:hover{box-shadow:0 3px 8px rgba(0,0,0,.5)}
