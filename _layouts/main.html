@@ -25,7 +25,7 @@ layout: default
           <!-- tag_size 변수 지정-->
           {% capture tag_size %}{{tag|last|size}}{% endcapture %}
 
-          <a href="../tags/#{{tag_name}}" onclick="showTag('#{{tag_name}}')" class="tagBox__tag">
+          <a href="../tags#{{tag_name}}" onclick="showTag('#{{tag_name}}')" class="tagBox__tag">
             {{tag_name}} ({{tag_size}})
           </a>
           {% endfor %}
