@@ -21,12 +21,12 @@ layout: default
           {% for tag in site.tags %}
             {% if site.data.tags contains tag[0] %}
               <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
-              {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
+              {% capture tag_name %}{{ tag | first }}{% endcapture %}
               <!-- tag_size 변수 지정-->
-              {% capture tag_size %}{{tag|last|size}}{% endcapture %}
+              {% capture tag_size %}{{ tag | last | size }}{% endcapture %}
 
               <a href="/tags#{{tag_name}}" onclick="showTag('#{{tag_name}}')" class="tagBox__tag">
-                {{tag_name}} ({{tag_size}})
+                &#35; {{ tag_name }} ({{ tag_size }})
               </a>
             {% endif %}
           {% endfor %}
@@ -39,9 +39,9 @@ layout: default
       <h3 class="contact-title">Contact me</h3>
       <ul>
         {% if site.social-github %}
-          <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li class="github"><a href="https://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
         {% else %}
-          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li class="github"><a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-slack %}
         <li><a href="https://join.slack.com/{{ site.social-slack }}" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a></li>

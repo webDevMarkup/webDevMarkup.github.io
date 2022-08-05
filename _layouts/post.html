@@ -37,8 +37,7 @@ layout: main
           {% if page.tags %}
             {% for tag in page.tags %}
               {% if site.data.tags contains tag %}
-<!--                <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ site.data.format[tag] }}</a>-->
-                <span class="tag">{{ site.data.format[tag] }}</span>
+                <a href="{{site.baseurl}}/tags#{{tag}}" class="tagBox__tag">&#35; {{ site.data.format[tag] }}</a>
               {% endif %}
             {% endfor %}
           {% endif %}
