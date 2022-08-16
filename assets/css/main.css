@@ -436,6 +436,8 @@ template {
   display: none;
 }
 
+.blind{position:absolute !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-1px !important;overflow:hidden !important;}
+
 .highlight {
   /* background-color: #faf9f9; */
   -webkit-border-radius: 3px;
@@ -1588,6 +1590,23 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
+
+/* about */
+.author__list {display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 15px;}
+
+/* profile card */
+.profileCard {position: relative;padding: 50px 0 20px;background: #eee;border-radius: 10px;overflow: hidden;}
+.profileCard p {margin: 0;}
+.profileCard .profileCard__picBox {margin-bottom: 20px;}
+.profileCard:before {content: '';position: absolute;top: 0;left: 50%;width: 20rem;height: 12rem;background-image: linear-gradient(45deg, #5b3cff, #00a9ff);border-radius: 0 0 50% 50%;transform: translateX(-50%);}
+.profileThumb {width: 180px;height: 180px;border-radius: 50%;}
+.profileCard .profileThumb {margin: 0 auto;}
+.profileThumb__imgBox {position: relative;display: inline-block;vertical-align: top;margin: 0;width: 100%;height: 100%;border-radius: inherit;background: #bcd2ef;overflow: hidden;}
+.profileThumb__img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-repeat: no-repeat;background-size: cover;background-position: 50% 50%;color: transparent;}
+.profileCard__info {position: relative;padding: 0 15px;}
+.profileCard__name {text-align: center;text-decoration: none;font-size: 20px;font-weight: 900;color: #4a4a4a;}
+.profileCard__position {text-align: center;font-size: 14px;color: #b0b0b0;}
+.profileCard__content {font-size: 14px;}
 
 /* authors */
 .author-media {padding:1.5rem;background:#f6f6f6}

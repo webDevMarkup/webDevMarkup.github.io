@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da8c6d1-e086-44c8-bf0a-85e0901cafa8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_authors/hsecode.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_authors/nizbridge.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_authors/tobbykim.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_authors/zey.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/profile-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/about.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/authors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_authors/One-punch.md" beforeDir="false" afterPath="$PROJECT_DIR$/_authors/One-punch.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +52,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_authors" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_authors" />
+      <recent name="$PROJECT_DIR$/_includes" />
+      <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$/_layouts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,6 +90,10 @@
       <workItem from="1657670154569" duration="9468000" />
       <workItem from="1657756652644" duration="4984000" />
       <workItem from="1657842850579" duration="5753000" />
+      <workItem from="1659916532879" duration="1197000" />
+      <workItem from="1660002970705" duration="1198000" />
+      <workItem from="1660089371055" duration="1196000" />
+      <workItem from="1660260730470" duration="15793000" />
     </task>
     <servers />
   </component>

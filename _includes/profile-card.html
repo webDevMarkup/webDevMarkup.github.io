@@ -1,0 +1,23 @@
+<div class="profileCard__picBox">
+    <div class="profileThumb">
+        <figure class="profileThumb__imgBox">
+            <a href="{{ author.url | prepend: site.baseurl }}" class="profileThumb__img" style="background-image: url({{ author.avatar | prepend: site.baseurl }});">
+                <!--{% if author.avatar %}
+                <img src="{{ author.avatar | prepend: site.baseurl }}" alt="{{ author.name }}" />
+                {% else %}
+                <i class="fas fa-user fa-4x"></i>
+                {% endif %}-->
+            </a>
+            <figcaption class="blind">{{ author.name }} 프로필 이미지</figcaption>
+        </figure>
+    </div>
+</div>
+<div class="profileCard__info">
+    <a href="{{ author.url | prepend: site.baseurl }}" class="profileCard__name">
+        <p>{{ author.name }}</p>
+    </a>
+    <p class="profileCard__position">{{ author.position }}</p>
+    <div class="profileCard__content">
+        <p>{{ author.description }}</p>
+    </div>
+</div>

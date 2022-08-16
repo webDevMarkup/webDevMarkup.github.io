@@ -4,7 +4,7 @@ title: One-punch man - web dev and author
 name: One-punch man
 position: Web Designer
 description: One-punch man is a web developer and a part time author, specialising in Laravel, Vue.js and developing Jekyll themes.
-avatar: /assets/img/avatar/avatar.png
+avatar: /assets/img/avatar/onepunchman.jpg
 website: https://www.csrhymes.com
 facebook: https://www.facebook.com/
 twitter: https://www.twitter.com/chrisrhymes
