@@ -16,27 +16,25 @@ layout: default
     <ul class="gnb__list">
       <li class="gnb__item"><a href="{{site.baseurl}}/" title="메인" class="gnb__link">Home</a></li>
       <li class="gnb__item"><a href="/about" title="소개" class="gnb__link">About</a></li>
-      <li class="gnb__item">
-        <div class="tagBox">
-          {% for tag in site.tags %}
-            {% if site.data.tags contains tag[0] %}
-              <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
-              {% capture tag_name %}{{ tag | first }}{% endcapture %}
-              <!-- tag_size 변수 지정-->
-              {% capture tag_size %}{{ tag | last | size }}{% endcapture %}
-
-              <a href="/tags#{{tag_name}}" onclick="showTag('#{{tag_name}}')" class="tagBox__tag">
-                &#35; {{ tag_name }} ({{ tag_size }})
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </li>
     </ul>
   </nav>
+  <div class="tagBox">
+    {% for tag in site.tags %}
+    {% if site.data.tags contains tag[0] %}
+    <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <!-- tag_size 변수 지정-->
+    {% capture tag_size %}{{ tag | last | size }}{% endcapture %}
+
+    <a href="/tags#{{tag_name}}" onclick="showTag('#{{tag_name}}')" class="tagBox__tag">
+      &#35; {{ tag_name }} ({{ tag_size }})
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
   <footer>
     <section class="contact">
-      <h3 class="contact-title">Contact me</h3>
+      <h3 class="contact-title">Contact</h3>
       <ul>
         {% if site.social-github %}
           <li class="github"><a href="https://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>

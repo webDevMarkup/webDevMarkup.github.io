@@ -8,7 +8,9 @@ permalink: /tags
 
 <div class="archive-group" style="display:none" id="{{tag_name}}">
   {% capture tag_size %}{{tag|last|size}}{% endcapture %}
-  <h3 id="{{tag_name}}" class="tagTitle"><i class="fa fa-tag fa-fw text-muted"></i>{{tag_name}}<span class="tagTitle__num">{{tag_size}}</span></h3>
+  <div class="contTitleBox">
+    <h2 id="{{tag_name}}" class="conTitle conTitle--h2 conTitle--tag"><i class="fa fa-tag fa-fw text-muted"></i>{{tag_name}}<span class="conTitle__num">{{tag_size}}</span></h2>
+  </div>
 
   {% for post in site.tags[tag_name] %}
   <article class="post">
