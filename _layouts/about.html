@@ -5,8 +5,10 @@ layout: main
 <div class="content">
     {{ content }}
 
-    <div class="author">
-        author 리스트..
+    <div class="section section--author">
+        <div class="contTitleBox">
+            <h2 class="conTitle conTitle--h2">Author List</h2>
+        </div>
         <div class="author__list">
             {% for author in site.authors %}
             <div class="profileCard">

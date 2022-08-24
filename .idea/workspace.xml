@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da8c6d1-e086-44c8-bf0a-85e0901cafa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_authors/hsecode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_authors/nizbridge.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_authors/tobbykim.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_authors/zey.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/profile-card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_authors/One-punch.md" beforeDir="false" afterPath="$PROJECT_DIR$/_authors/One-punch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_authors/dave.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_authors/guest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/profile-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/profile-card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,14 @@
       <workItem from="1659916532879" duration="1197000" />
       <workItem from="1660002970705" duration="1198000" />
       <workItem from="1660089371055" duration="1196000" />
-      <workItem from="1660260730470" duration="15793000" />
+      <workItem from="1660260730470" duration="16005000" />
+      <workItem from="1660617448990" duration="610000" />
+      <workItem from="1660693990428" duration="599000" />
+      <workItem from="1660780545626" duration="1239000" />
+      <workItem from="1660866757115" duration="1333000" />
+      <workItem from="1661126029413" duration="1196000" />
+      <workItem from="1661211537378" duration="3816000" />
+      <workItem from="1661298951545" duration="2824000" />
     </task>
     <servers />
   </component>
