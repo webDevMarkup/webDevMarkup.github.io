@@ -1,11 +1,8 @@
 ---
-title: Dave - web dev
+title: Nizbridge
 name: Nizbridge
 position: Web Developer
-description: Dave is a web developer
+description: 마크업 개발자입니다.
 avatar: /assets/img/avatar/nizbridge.jpg
-facebook: https://www.facebook.com/
-twitter: https://www.twitter.com/
-github: https://www.github.com/
 ---
-Dave is a web developer. This is a page all about Dave.
+마크업 개발자입니다...

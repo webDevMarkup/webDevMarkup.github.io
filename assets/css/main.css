@@ -1619,12 +1619,19 @@ a.newer-posts:hover {
 .page-author{position:relative;margin-top:20px}
 .page-author .media{display:flex}
 .page-author .media-left img{width:100px}
-.authorDetails .image > img{width:100px}
+.authorDetails{flex:1}
+.authorDetails a {color:#fff}
+.authorDetails .image > img{width:100px;border-radius: 50%;box-shadow:0 3px 9px rgba(0,0,0,.2)}
 .authorDetails .title{font-weight:bold;margin:0}
 .authorDetails .subtitle{margin:0}
-.authorDetails .card{background:#f4f4f4;padding:1em}
+.authorDetails .card{background:#43a2a2;padding:1em;border-radius:6px;color:#fff}
 .authorDetails .card .title {margin-top:0;margin-bottom:0}
 .authorDetails .card .subtitle{font-size:13px;margin-bottom:5px;}
 .authorDetails .card .content{font-size:1em}
 .authorDetails .card .button {display:block;background:#4a4a4a;color:#fff;text-align:center;text-decoration: none;margin-top:5px}
 .authorDetails .card .button:hover{box-shadow:0 3px 8px rgba(0,0,0,.5)}
+.authorDetails .ProfileWrap{position:relative;padding-top:65px;margin-top:20px}
+.authorDetails .ProfileWrap .image{margin:0;border-radius:50%}
+.authorDetails .profileImage {z-index:1;position:absolute;top:0;left:30px}
+.authorDetails .profileInfoBox {position:relative;background-image: linear-gradient(165deg, #5C258D, #4389A2);border-radius:8px;padding:50px 20px 20px;box-sizing:border-box;color:#fafafa}
+.authorDetails .latestPostTitle > span {display:inline-block;vertical-align: top;padding:5px;border-radius:5px;background:#4389A2;color:#fff}

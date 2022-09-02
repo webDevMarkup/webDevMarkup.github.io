@@ -1,11 +1,11 @@
 ---
-title: Dave - web dev
+title: Zey
 name: Zey
 position: Web Developer
-description: Dave is a web developer
+description: 마크업 개발을 전문으로 하고 있습니다.
 avatar: /assets/img/avatar/zey.jpg
-facebook: https://www.facebook.com/
-twitter: https://www.twitter.com/
-github: https://www.github.com/
+# facebook: https://www.facebook.com/
+# twitter: https://www.twitter.com/
+# github: https://www.github.com/
 ---
-Dave is a web developer. This is a page all about Dave.
+마크업 개발을 전문으로 하고 있습니다.
